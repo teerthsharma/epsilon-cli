@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "epsilon-cli"
+version = "0.1.0"
+description = "Epsilon: Context Window Optimization via Stochastic Resonance — adaptive noise injection for LLM training"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+authors = [{name = "Teerth Sharma", email = "teerthsharma@outlook.com"}]
+keywords = ["llm", "context-window", "stochastic-resonance", "training", "optimization"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "numpy>=1.24",
+    "click>=8.0",
+]
+
+[project.scripts]
+epsilon-cli = "epsilon_cli.cli:main"
+epsilon-stochastic = "epsilon_cli.cli:stochastic"
+epsilon-info = "epsilon_cli.cli:info"
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,4 @@
+[console_scripts]
+epsilon-cli = epsilon_cli.cli:main
+epsilon-info = epsilon_cli.cli:info
+epsilon-stochastic = epsilon_cli.cli:stochastic

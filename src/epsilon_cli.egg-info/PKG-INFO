@@ -1,0 +1,34 @@
+Metadata-Version: 2.4
+Name: epsilon-cli
+Version: 0.1.0
+Summary: Epsilon: Context Window Optimization via Stochastic Resonance — adaptive noise injection for LLM training
+Author-email: Teerth Sharma <teerthsharma@outlook.com>
+License: MIT
+Keywords: llm,context-window,stochastic-resonance,training,optimization
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: numpy>=1.24
+Requires-Dist: click>=8.0
+
+# Epsilon CLI
+
+Context window optimization via stochastic resonance — adaptive noise injection for LLM training.
+
+## Install
+
+```bash
+pip install epsilon-cli
+```
+
+## Usage
+
+```bash
+epsilon-info              # Show version
+epsilon-stochastic        # Run benchmark
+epsilon-stochastic --steps 200 --verbose
+```
