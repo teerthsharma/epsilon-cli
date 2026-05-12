@@ -1,7 +1,7 @@
 """Epsilon CLI — Click interface."""
 import click
 from . import __version__
-from .resonance import StochasticResonanceInjector, StochasticResonanceConfig, run_optimization_benchmark
+from .resonance import run_optimization_benchmark
 
 
 @click.command()
